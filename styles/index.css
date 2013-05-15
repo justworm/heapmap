@@ -1,0 +1,86 @@
+body{
+	font-family: Georgia,MingLiU;
+	width: 1200px;
+	margin: 0 auto;
+}
+#container{
+	height: 900px;
+	width: 1200px;
+	overflow: scroll;
+	position: absolute;
+	top: 200px;
+	z-index: 1111;
+}
+#heatmapArea{
+	height: 900px;
+}
+
+#overflowDiv{
+	width: 1200px;
+	border: solid 2px #aaa;
+	height: 1200px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: -1;
+
+}
+#websrc{
+	width: 1320px;
+	height: 1200px;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	z-index: 1;
+	background-color: rgba(165, 184, 192, 0.44);
+}
+#button{
+	position: absolute;
+	top: 0;
+}
+
+
+header{
+	overflow: hidden;
+	margin-bottom: 1em;
+	padding: 0 1em;
+	border-radius: 5px;
+	background-color: #F2FBF2;
+}
+
+header div{
+	float: left;
+	color:#279337;
+}
+header p{
+	margin-top: -16px;
+	font-style: italic;
+}
+
+header a{
+	float: right;
+	margin-top: 22px;
+	text-decoration: none;
+	margin-right: 1em;
+	border: solid 1px #969696;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: #F0FDF2;
+	color: #279337;
+	box-shadow: inset 0 0 1px #FFF,0 2px 3px #C7C7C7;
+}
+header a:hover{
+	color: #BE4805;
+	text-shadow: 0 0 1px rgba(255, 255, 0, 0.5);
+}
+
+.description{
+
+	color:#279337;
+}
+
+#result{
+	color: #494949;
+	//font-style: italic;
+	padding-left: 1em;
+}

@@ -1,0 +1,102 @@
+body{
+	font-family: Georgia,MingLiU;
+	background-color: #eee;
+	width: 1200px;
+	height: 1200px;
+	margin: 0 auto;
+}
+header{
+	background-image: url("../images/banner.jpg");
+	background-color: #F2FBF2;
+	overflow: hidden;
+	margin-bottom: 1em;
+	border-radius: 10px;
+}
+
+header h1 {
+	color: rgba(255, 255, 255, 0.86);
+	font-size: 36px;
+	text-shadow: 0px 0px 4px rgba(252, 250, 217, 0.27);
+	margin-left: 45px;
+}
+header nav{
+	overflow: hidden;
+	margin: 1em;
+}
+header nav ul{
+	list-style-type: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 0.17);
+	border-radius: 10px;
+}
+header nav ul li{
+	float: left;
+	border-right: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+header nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 0.5em 1em;
+	margin: 0 1em;
+	color: #F3D86D;
+	font-size: 18px;
+}
+header nav ul li a:hover{
+	color: #fff;
+}
+article{
+	width: 900px;
+
+	padding: 1em 3em;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+article .date{
+	margin-bottom: 5px;
+	color: #555;
+	float: left;
+	margin-right: 10px;
+}
+article .author{
+	color: #555;
+	font-style: italic;
+}
+article img{
+	width: 180px;
+	float: left;
+	margin-right: 1em;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 5px 1px #CFCFCF;
+}
+
+article p{
+	padding: 10px;
+}
+article h2{
+	padding: 10px;
+	background-color: #F2FBF2;
+	border-radius: 10px;
+}
+article h2 a{
+	color: #666699;
+	text-decoration: none;
+}
+article h2 a:hover,article .more a:hover{
+	color: rgb(174,55,36);
+}
+article .more{
+	font-style: italic;
+}
+footer{
+	background-color: rgb(174,55,36);
+	border-radius: 10px;	
+	padding: 0 1em;
+	color: #eee;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	padding: 10px;
+
+}
