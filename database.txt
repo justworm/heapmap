@@ -1,0 +1,68 @@
+Database:mysql
+
+database name : heapmap
+
+tables name:
+click(datas?)
+
+table info:
+id INT AUTO_INCREMENT,
+x INT NOT_NULL,
+y INT NOT_NULL,
+count INT NOT_NULL,
+PRIMARY_KEY(id)
+
+
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| blog               |
+| cdcol              |
+| mysql              |
+| performance_schema |
+| phpmyadmin         |
+| test               |
+| webauth            |
++--------------------+
+8 rows in set (0.01 sec)
+
+mysql> create database heapmap;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use heapmap;
+Database changed
+
+mysql> create table datas(id int auto_increment,x int not null,y int not null,pr
+imary key(id));
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> describe datas;
++-------+---------+------+-----+---------+----------------+
+| Field | Type    | Null | Key | Default | Extra          |
++-------+---------+------+-----+---------+----------------+
+| id    | int(11) | NO   | PRI | NULL    | auto_increment |
+| x     | int(11) | NO   |     | NULL    |                |
+| y     | int(11) | NO   |     | NULL    |                |
++-------+---------+------+-----+---------+----------------+
+3 rows in set (0.01 sec)
+
+mysql> alter table datas add count int not null after y;
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> describe datas;
++-------+----------+--------+------+-----------+---------------------+
+| Field | Type    | Null | Key | Default | Extra          	|
++-------+----------+--------+------+-----------+---------------------+
+| id       | int(11) | NO   | PRI | NULL    | auto_increment |
+| x        | int(11) | NO   |         | NULL    |                	|
+| y        | int(11) | NO   |         | NULL    |                	|
+| count | int(11) | NO   |         | NULL    |                	|
++-------+----------+--------+-------+-----------+---------------------+
+4 rows in set (0.01 sec)
+
+mysql>
